@@ -1,0 +1,7 @@
+
+phpfpm:
+  build: php-fpm-8
+  volumes:
+    - ./php-fpm-8/php-fpm.conf:/usr/local/etc/php-fpm.conf
+    - ./php-fpm-8/php.ini:/usr/local/etc/php/php.ini
+    - ./log/php-fpm:/var/log/php-fpm
